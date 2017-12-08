@@ -9,7 +9,7 @@ import java.util.List;
 public class readerTxt_v6 {
 
     public static void main(String[] args) {
-        final String fileName = System.getProperty(("user.dir")) + "/work/src/main/resources/testText.txt";
+        final String fileName = System.getProperty(("user.dir")) + "/work/src/main/resources/test.txt";
 
         List<String> strings = readFile(fileName);
 
