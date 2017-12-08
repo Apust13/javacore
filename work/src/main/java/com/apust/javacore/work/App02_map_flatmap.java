@@ -1,4 +1,4 @@
-package com.apust;
+package com.apust.javacore.work;
 
 import java.util.ArrayList;
 import java.util.List;

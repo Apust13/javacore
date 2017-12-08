@@ -1,4 +1,4 @@
-package com.apust.performance;
+package com.apust.javacore.work.performance;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package com.apust.java8;
+package com.apust.javacore.work.java8;
 
 import java.util.function.Supplier;
 import java.util.stream.Stream;

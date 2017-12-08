@@ -1,4 +1,4 @@
-package com.apust.IO;
+package com.apust.javacore.work.IO;
 
 public class ReadTxtFile {
 
