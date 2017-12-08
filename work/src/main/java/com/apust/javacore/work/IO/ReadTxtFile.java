@@ -1,7 +1,6 @@
 package com.apust.javacore.work.IO;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -11,7 +10,8 @@ public class ReadTxtFile {
 
     public static void main(String[] args) {
 
-        final String fileName = "/main/resources/testTxt.txt";
+        final String fileName = System.getProperty(("user.dir")) + "/work/src/main/resources/testText.txt";
+
 
         List<String> strings = readFile(fileName);
 
