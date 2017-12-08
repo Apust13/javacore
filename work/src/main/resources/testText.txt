@@ -1,0 +1,12 @@
+What is causing it?
+
+To understand the cause for the java.lang.OutOfMemoryError: PermGen space,
+we would need to understand what this specific memory area is used for.
+For practical purposes, the permanent generation consists mostly of class declarations loaded and stored into PermGen.
+
+This includes the name and fields of the class, methods with the method bytecode,
+constant pool information, object arrays and type arrays associated with a class and Just In Time compiler optimizations.
+From the above definition you can deduce that the PermGen size requirements depend both on the number of classes
+loaded as well as the size of such class declarations.
+
+Therefore we can say that the main cause for the java.lang.OutOfMemoryError: PermGen space is that either too many classes or too big classes are loaded to the permanent generation.
