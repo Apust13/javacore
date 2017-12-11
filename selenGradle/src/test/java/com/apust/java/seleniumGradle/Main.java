@@ -19,25 +19,34 @@ public class Main {
     private final static String geckodriverPathWin = (System.getProperty("user.dir")  + "\\src\\test\\resources\\geckodriver.exe")
                                                       .replaceAll("\\\\|/", "\\" + System.getProperty("file.separator"));
 
-//       System.setProperty("webdriver.gecko.driver", geckodriverPathWin);
+
 
 
     @Before
     public void start(){
+
+        if(t1Driver.get() != null){
+            driver = t1Driver.get();
+            wait = new WebDriverWait(driver, 10);
+            return;
+        }
+
+
         System.setProperty("webdriver.chrome.driver", chromedriverPathWin);
         driver = new ChromeDriver();
+        wait = new WebDriverWait(driver, 10);
 
 
 //        System.setProperty("webdriver.gecko.driver", geckodriverPathWin);
 //        driver = new FirefoxDriver();
 
-        wait = new WebDriverWait(driver, 10);
-
-
 
 //        Cookie cook = new Cookie("ACCOUNT_CHOOSER", "AFx_qI7NddkmejBc2cEJtQJGVGhbCk6i1H6WCDQjev8vhNQKGux9hO_8ESyH72NzwjCjV6-LsblwlMnb8vnR_ecVawoj4lWdoeuhWZaIonpR4V4dVucq2OtQGHQ0PsHuv8olNDXwnwf5de_OoTWK2PIX8wdXWaorgA", "accounts.google.com/");
 //
 //        driver.manage().addCookie(cook);
+
+        Runtime.getRuntime().addShutdownHook( new Thread( () -> { driver.quit(); driver = null;}));
+
     }
 
 
