@@ -9,8 +9,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Main {
 
-    protected WebDriver driver;
-    protected WebDriverWait wait;
+    public static ThreadLocal<WebDriver> t1Driver = new ThreadLocal<>();
+    public WebDriver driver;
+    public WebDriverWait wait;
 
     private final static String chromedriverPathWin = (System.getProperty("user.dir") + "\\src\\test\\resources\\chromedriver.exe")
                                                        .replaceAll("\\\\|/", "\\" + System.getProperty("file.separator"));
