@@ -35,6 +35,7 @@ public class Main {
         System.setProperty("webdriver.chrome.driver", chromedriverPathWin);
         driver = new ChromeDriver();
         wait = new WebDriverWait(driver, 10);
+        t1Driver.set(driver);
 
 
 //        System.setProperty("webdriver.gecko.driver", geckodriverPathWin);
