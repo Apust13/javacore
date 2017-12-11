@@ -18,6 +18,14 @@ public class Main {
 
     private final static String chromedriverPathWin = (System.getProperty("user.dir") + "\\src\\test\\resources\\chromedriver.exe")
             .replaceAll("\\\\|/", "\\" + System.getProperty("file.separator"));
+//
+//    private final static String geckodriverPathWin = (System.getProperty
+//            ("user.dir")
+//            + "\\src\\test\\resources\\geckodriver.exe")
+//            .replaceAll("\\\\|/", "\\"
+//                    + System.getProperty("file.separator"));
+//
+//       System.setProperty("webdriver.gecko.driver", geckodriverPathWin);
 
 
     @Before
