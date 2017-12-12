@@ -54,9 +54,9 @@ public class Main {
 
     @After
     public void tearDown(){
-        if(driver != null){
-            driver.quit();
-        }
-        driver = null;
+//        if(driver != null){
+//            driver.quit();
+//        }
+//        driver = null;
     }
 }
