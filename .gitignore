@@ -22,3 +22,7 @@
 hs_err_pid*
 .idea/*
 work/*.iml
+selenGradle/*.iml
+selenium/*.iml
+JavaCore/*.iml
+JavaCore/.idea/*
