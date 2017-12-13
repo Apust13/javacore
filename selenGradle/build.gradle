@@ -23,5 +23,5 @@ tasks.withType(JavaCompile){
 }
 
 //task showMeCache << {
-//    configurations.compile.each {println it}
+//    configurations.com.apust.compile.each {println it}
 //}
