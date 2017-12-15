@@ -1,6 +1,6 @@
 package com.apust.samples_java;
 
-import static com.apust.samples_java.Factorial.*;
+
 
 /**
  * Created by GUN on 11/17/2015.
@@ -17,7 +17,7 @@ public class Test {
 
 //        BigInteger t1 = new BigInteger(valueOf(5));
 
-        System.out.println(factorial(3));
+//        System.out.println(factorial(3));
 
     }
 }
