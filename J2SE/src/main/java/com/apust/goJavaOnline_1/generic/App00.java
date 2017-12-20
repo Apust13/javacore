@@ -20,7 +20,7 @@ public class App00 {
     public void generic(){
         List<Number> num;
         List<Integer> integer = Arrays.asList(1,2,3);
-        num = integer;
+//        num = integer;
     }
 
 }

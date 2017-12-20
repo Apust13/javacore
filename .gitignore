@@ -26,3 +26,4 @@ selenGradle/*.iml
 selenium/*.iml
 JavaCore/*.iml
 JavaCore/.idea/*
+SelenPython/env/*
